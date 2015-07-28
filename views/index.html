@@ -1,35 +1,355 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Eric Hartmann</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-<title>fast MEAN</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Magnific popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Color styles -->
+    <link rel="stylesheet" href="css/colors/blue.css">
+    <!-- <link rel="stylesheet" href="css/colors/yellow.css">-->
+    <!-- <link rel="stylesheet" href="css/colors/red.css">-->
+    <!--  <link rel="stylesheet" href="css/colors/purple.css">-->
+    <!--  <link rel="stylesheet" href="css/colors/orange.css">-->
+    <!--  <link rel="stylesheet" href="css/colors/green.css">-->
+
+    <!-- Feature detection -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/plugins/html5shiv.js"></script>
+    <script src="js/plugins/respond.min.js"></script>
+    <![endif]-->
 </head>
-
-<body ng-controller="MainController">
-
-<div class="col-md-12" style="background-color: #006699">
-
-
+<body>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav" id="main-menu">
+                <li><a href="#page-welcome">Home</a></li>
+                <li><a href="#page-profile">Profile</a></li>
+                <li><a href="#page-skills">Skills</a></li>
+                <li><a href="#page-education">Education</a></li>
+                <li><a href="#page-experience">Experience</a></li>
+                <li><a href="#page-portfolio">Portfolio</a></li>
+                <li><a href="#page-contact">Contact</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
 </div>
-{% raw %}
-<h1>Bare bones MEAN template</h1>
-{{helloWorld}}
-<h3>Put the question and options here:</h3>
+<!-- welcome begins -->
+<section id="page-welcome" class="page-welcome">
+    <div>
+        <ul class="slider-controls">
+            <li><a id="vegas-next" class="next" href="#"></a></li>
+            <li><a id="vegas-prev" class="prev" href="#"></a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="row">
+            <header class="centered">
+                <h1>Eric Hartmann</h1>
+                <p>PROFESSIONAL SOFTWARE DEVELOPER</p>
+            </header>
+            <div class="social-icons">
+                <a href="https://twitter.com/coguy450" class="btn btn-round btn-clear btn-twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/pub/eric-hartmann/1/779/242/" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>
+                <a href="https://plus.google.com/u/0/112237338433972664608" class="btn btn-round btn-clear btn-google"><i class="fa fa-google-plus"></i></a>
+
+            </div>
+            <a href="#page-contact" class="btn btn-default hire-me">Hire Me</a>
+            <a href="/Eric_Hartmann-resume-July2015.docx" class="btn btn-default hire-me">Download Resume</a>
+        </div>
+    </div>
+</section><!-- welcome ends -->
+<!-- profile begins -->
+<section id="page-profile" class="page-profile">
+    <div class="container">
+        <header class="section-header">
+            <h2 class="section-title">Personal Profile</h2>
+            <div class="spacer"></div>
+            <p class="section-subtitle">Here is an overview of some of my projects and experience </p>
+        </header>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="profile"><img src="img/Ericsmaller.jpg" alt="profile" style="max-width:100%;"/></div>
+            </div>
+            <div class="col-md-9">
+                <p>Hi! I'm Eric Hartmann and I have a pretty diverse IT background, allow me to take you on a tour and let me show you how I can help you.</p>
+
+                <p>I have been developing on and off for over 10 years now. My most recent projects include the MEAN stack, jquery mobile, node.js, AngularJS, and several other technologies (see resume)</p>
+                <p>I have completed IT projects as a Project Manager, Business Analyst, QA Engineer and as a Developer, so I know what it takes to make a project successful and come in under time and under budget.</p>
+                <p>Currently my career goals are to work in the field of development and learn as much as possible about new technologies and deliver a lot of value.</p>
+            </div>
+        </div>
+    </div>
+</section><!-- profile ends -->
+<!-- skills begins -->
+<section id="page-skills" class="page-skills">
+    <div class="container">
+
+        <header class="section-header">
+            <h2 class="section-title"><span>Skills</span></h2>
+            <div class="spacer"></div>
+            <p class="section-subtitle"> </p>
+        </header>
+        <div class="row">
+            <div class="col-md-2">
+               <span class="chart" data-percent="80">
+                      <span class="percent"></span>
+                      <h3>T-SQL (7 years)</h3>
+               </span>
+            </div>
+            <div class="col-md-2 ">
+               <span class="chart" data-percent="50">
+                      <span class="percent"></span>
+                      <h3>JavaScript (3 Years)</h3>
+               </span>
+            </div>
+            <div class="col-md-2">
+               <span class="chart" data-percent="60">
+                      <span class="percent"></span>
+                       <h3>HTML (4 years)</h3>
+               </span>
+            </div>
+            <div class="col-md-2">
+               <span class="chart" data-percent="40">
+                      <span class="percent"></span>
+                      <h3>AngularJS (2 years)</h3>
+               </span>
+            </div>
+            <div class="col-md-2">
+               <span class="chart" data-percent="40">
+                      <span class="percent"></span>
+                      <h3>node.js (2 years)</h3>
+               </span>
+            </div>
+            <div class="col-md-2">
+               <span class="chart" data-percent="85">
+                      <span class="percent"></span>
+                       <h3>Project Management (5 years)</h3>
+               </span>
+            </div>
+        </div>
+    </div>
+</section><!-- skills ends -->
+<!-- education begins -->
+<section id="page-education" class="page-education">
+    <div class="container">
+        <header class="section-header">
+            <h2 class="section-title"><span>Education</span></h2>
+            <div class="spacer"></div>
+            <p class="section-subtitle">Here is my formal eduction and a few certifications </p>
+        </header>
+        <div class="row">
+            <div class="col-md-6">
+                <article class="education">
+                    <header>
+                        <h3>University of Colorado at Colorado Springs</h3>
+                        <p>Bachelor of Arts - Biology <strong>Graduated:</strong> 1999</p>
+                    </header>
+                    <p>I majored in Biology with a minor in Business. Biology taught me many great
+                        critical thinking skills, but later I realized my passion lies in IT.</p>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="education">
+                    <header>
+                        <h3>University of Colorado at Colorado Springs</h3>
+                        <p>Masters in Business Administration  - <strong>Graduated:</strong> 2001</p>
+                    </header>
+                    <p>With an emphasis in technical management. My MBA taught me many things about
+                        leadership, IT management, Accounting, and general business operations</p>
+                </article>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <article class="education">
+                    <header>
+                        <h3>Project Management Institute</h3>
+                        <p>Project Management Professional (PMP) <strong>Earned:</strong> 2010</p>
+                    </header>
+                    <p>In addition to completing several projects as a Project and Program Manager, I have been learning everything
+                        I can about Agile Project Management to complete my skill set.</p>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="education">
+                    <header>
+                        <h3>CBAP</h3>
+                        <p>Certified Business Analyst Professional <strong>Earned:</strong> 2012</p>
+                    </header>
+                    <p>Good Requirements = Good Software. Have you ever suffered from bad Requirements and an inefficient
+                        Requirement Gathering Process? I can help you with that. I have been a part of enormous projects with hundreds of
+                        Use Cases and can help you navigate the difficult waters of Requirement Management</p>
+                </article>
+            </div>
+        </div>
 
 
-<br>
-<ng-view></ng-view>
+    </div>
+</section><!-- education ends -->
+<!-- experience begins -->
+<section id="page-experience" class="page-experience">
+    <div class="container">
+        <header class="section-header">
+            <h2 class="section-title"><span>Experience</span></h2>
+            <div class="spacer"></div>
+            <p class="section-subtitle">Here are a few of my most recent employers, please download my resume for full list. </p>
+        </header>
+        <div class="row">
+            <div class="col-md-4">
+                <article class="experience">
+                    <header>
+                        <h3><a href="http://www.iag.biz">IAG Consulting</a></h3>
+                        <p>Sr. Business Consultant / Denver, CO / 2010 - Current</p>
+                    </header>
+                    <p>Responsible for documenting solution requirements on a variety of projects in the industries of Government, Banking, Pharmaceutical, Real Estate, etc. </p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="experience">
+                    <header>
+                        <h3>DIRECTV</h3>
+                        <p>Software Developer / Denver, CO / 2013 - 2014</p>
+                    </header>
+                    <p>Developed custom front end applications for Field Services and back office functions using JavaScript, Jquery, HTML5, Angular, C#, node.js, Backbone.js, and SQL Server and Oracle DB.</p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="experience">
+                    <header>
+                        <h3><a href="http://www.wagontime.com">WagonTime</a></h3>
+                        <p>Software Developer / Denver, CO / 2014 - Current</p>
+                    </header>
+                    <p>A very cool personal project which develops online and mobile applications for mental health practitioners. </p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section><!-- experience ends -->
+<!-- portfolio begins -->
+<section id="page-portfolio" class="page-portfolio">
+    <div class="container">
+        <div class="row">
+            <header class="section-header">
+                <h2 class="section-title"><span>Portfolio</span></h2>
+                <div class="spacer"></div>
+                <p class="section-subtitle">Check out a few of my business and personal Projects </p>
+            </header>
 
-<script src="js/angular.min.js"></script>
-<script src="js/angular-route.min.js"></script>
-<script src="app.js"></script>
+            <div id="grid-controls-wrapper">
+                <ul class="nav nav-pills center-pills grid-controls">
+                    <li class="active filter"><a href="javascript:void(0)" data-filter="*">All</a></li>
+                    <li class="filter" ><a href="javascript:void(0)" data-filter=".mean">MEAN Stack</a></li>
+                    <li class="filter" ><a href="javascript:void(0)" data-filter=".jquery">jQuery Mobile</a></li>
+                    <li class="filter"><a href="javascript:void(0)"  data-filter=".informatica">Informatica</a></li>
+                    <li class="filter" ><a href="javascript:void(0)" data-filter=".web">Websites</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul id="grid" class="grid-wrapper">
+
+                    <li class="mix jquery">
+                        <a href="img/portfolio/small/jqueryLetter.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/jqueryLetter.png" alt="" ></a></li>
+                    <li class="mix informatica">
+                        <a href="img/portfolio/small/Informatica.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/Informatica.png" alt="" ></a></li>
+                    <li class="mix jquery">
+                        <a href="img/portfolio/small/Supervisor.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/Supervisor.png" alt="" ></a></li>
+                    <li class="mix jquery">
+                        <a href="img/portfolio/small/jqueryDashboard.png"><div class="overlay"><i class="fa fa-search"></i></div><img style="max-height: 150px" src="img/portfolio/small/jqueryDashboard.png" alt="" ></a></li>
+                    <li class="mix web">
+                        <a href="img/portfolio/small/dental.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/dental.png" alt="" ></a></li>
+                    <li class="mix web">
+                        <a href="img/portfolio/small/wagon.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/wagon.png" alt="" ></a></li>
+                    <li class="mix jquery">
+                        <a href="img/portfolio/small/d2.png"><div class="overlay"><i class="fa fa-search"></i></div><img style="max-height: 150px" src="img/portfolio/small/d2.png" alt="" ></a></li>
+                    <li class="mix web">
+                        <a href="img/portfolio/small/wagon2.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/wagon2.png" alt="" ></a></li>
+                    <li class="mix mean">
+                        <a href="img/portfolio/small/mean1.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/mean1.png" alt="" ></a></li>
+                    <li class="mix mean">
+                        <a href="img/portfolio/small/mean2.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/mean2.png" alt="" ></a></li>
+                    <li class="mix mean">
+                        <a href="img/portfolio/small/mean3.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/mean3.png" alt="" ></a></li>
+                    <li class="mix jquery">
+                        <a href="img/portfolio/small/prov.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/prov.png" alt="" ></a></li>
+                    <li class="mix jquery">
+                        <a href="img/portfolio/small/Supervisor2.png"><div class="overlay"><i class="fa fa-search"></i></div><img style="max-height: 150px" src="img/portfolio/small/Supervisor2.png" alt="" ></a></li>
+                    <li class="mix mean">
+                        <a href="img/portfolio/small/mean4.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/mean4.png" alt="" ></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</section><!-- portfolio ends -->
+<!-- contact begins -->
+<section id="page-contact" class="page-contact">
+    <div class="container">
+        <header class="section-header">
+            <h2 class="section-title"><span>Contact</span></h2>
+            <div class="spacer"></div>
+            <p class="section-subtitle">Send me an email to better explain how I can help you. </p>
+        </header>
+        <div class="row">
+            <div class="col-sm-5 contact-info">
+                <h3>Contact Info</h3>
+                <p><i class="fa"></i>Eric Hartmann</p>
+                <p><i class="fa fa-map-marker"></i> 7373 E. Bates Dr., Denver, CO  80209 </p>
+                <p><i class="fa fa-phone"></i> (303) 589-2180</p>
+                <p><i class="fa fa-envelope-o"></i><a href="mailto:coguy450@gmail.com?Subject=I%20want%20to%hire%20you" style="color: #ffffff">coguy450@gmail.com</a> </p>
+            </div>
 
 
-{% endraw %}
+        </div><!-- End row -->
+
+    </div>
+</section> <!-- contact ends -->
+
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/jquery.easypiechart.min.js"></script>
+<script src="js/jquery.vegas.min.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/main.js"></script>
 </body>
-
 </html>
