@@ -5,7 +5,7 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-var middleware = require('./controllers/middleware');
+//var middleware = require('./controllers/middleware');
 //connect to mongodb
 //mongoose.connect('mongodb://demo:Col2nago@ds053320.mongolab.com:53320/standupmeetingnotes');
 //mongoose.connect('mongodb://localhost:27017/wagon1');
@@ -38,7 +38,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 //app.use('/', routes);
-app.use(express.static(__dirname + '/views'));
+//app.use(express.static(__dirname + '/views'));
 
 
 //from auth project
