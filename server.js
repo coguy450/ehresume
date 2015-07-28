@@ -1,54 +1,60 @@
-'use strict';
-var express = require('express'),
-     app = express();
+var express = require('express');
 var path = require('path');
-var bodyParser = require('body-parser'),
-    mongoose = require('mongoose');
-var swig  = require('swig');
-var controller = require('./app/controllers/server.controller.js');
+//var favicon = require('serve-favicon');
+//var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
-//mongoose.connect('mongodb://localhost/fastMEAN');
+var middleware = require('./controllers/middleware');
+//connect to mongodb
+//mongoose.connect('mongodb://demo:Col2nago@ds053320.mongolab.com:53320/standupmeetingnotes');
+//mongoose.connect('mongodb://localhost:27017/wagon1');
 
-app.set('view engine', 'html');
-app.set('view options', {
-    layout: false
-});
+//var routes = require('./routes/index');
 
-app.engine('html', swig.renderFile);
-app.set('view cache', false);
-// To disable Swig's cache, do the following:
-swig.setDefaults({ cache: false });
-app.use(express.static(__dirname + '/public'));
+var app = express();
+
+// view engine setup
+app.use(express.static(__dirname + '/views'));
+
+
+
+/*
+app.use(session({
+    cookieName: 'session',
+    secret: 'keyboard cat',
+    duration: 30 * 60 * 1000,
+    activeDuration: 5 * 60 * 1000
+}));
+*/
+
+
+
+// uncomment after placing your favicon in /public
+//app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
+//app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+
+//app.use('/', routes);
+app.use(express.static(__dirname + '/views'));
 
 
-app.get('/',controller.index);
+//from auth project
 
-/*var server = app.listen('3000', function() {
-    var host = server.address().address;
-    var port = server.address().port;
-    console.log('listening at port:'+ port);
-});*/
+//app.use(csrf());
+//app.use(middleware.simpleAuth);
 
-// catch 404 and forward to error handler
 
+
+//catch 404 and forward to error handler
 app.use(function(req, res, next) {
-    var err = new Error('Not Found'+ req.url);
+    var err = new Error('Not Found');
     err.status = 404;
     next(err);
 });
 
-// error handlers
-if (app.get('env') === 'development') {
-    app.use(function(err, req, res, next) {
-        res.status(err.status || 500);
-       console.log(err);
-    });
-}
 
 app.listen(3000);
 module.exports = app;
-
-
-
