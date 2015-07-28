@@ -7,7 +7,7 @@ var bodyParser = require('body-parser'),
 var swig  = require('swig');
 var controller = require('./app/controllers/server.controller.js');
 
-mongoose.connect('mongodb://localhost/fastMEAN');
+//mongoose.connect('mongodb://localhost/fastMEAN');
 
 app.set('view engine', 'html');
 app.set('view options', {
@@ -37,7 +37,7 @@ var server = app.listen('3000', function() {
 // catch 404 and forward to error handler
 
 app.use(function(req, res, next) {
-    var err = new Error('Not Found');
+    var err = new Error('Not Found'+ req.url);
     err.status = 404;
     next(err);
 });
