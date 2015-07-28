@@ -24,15 +24,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 app.get('/',controller.index);
-app.put('/surveys', function (req,res){
-    console.log(req.body, "req.body routes"); //
-    controller.addquestion(req,res);
-});
-var server = app.listen('3000', function() {
+
+/*var server = app.listen('3000', function() {
     var host = server.address().address;
     var port = server.address().port;
     console.log('listening at port:'+ port);
-});
+});*/
 
 // catch 404 and forward to error handler
 
@@ -50,7 +47,7 @@ if (app.get('env') === 'development') {
     });
 }
 
-
+app.listen(3000);
 module.exports = app;
 
 
