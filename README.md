@@ -1,2 +1,5 @@
+Hi! I'm Eric Hartmann and I have a pretty diverse IT background, allow me to take you on a tour and let me show you how I can help you.
 
-This is a scaled down version of the MEAN stack meant for quick development and testing, this version will have no security or 3rd party modules, it will be implemented with Angular 1.4
+I have been developing on and off for over 15 years now. My most recent projects include React.js, the MEAN stack, jquery mobile, node.js, AngularJS, and several other technologies (see resume)
+I have completed IT projects as a Developer, Project Manager, Business Analyst, and a QA Engineer, so I know what it takes to make a project successful and come in under time and under budget.
+Currently my career goals are to work in the field of development and learn as much as possible about new technologies and deliver a lot of value.
